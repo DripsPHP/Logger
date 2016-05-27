@@ -1,0 +1,13 @@
+{
+    "name": "drips/logger",
+    "description": "Logger basierend auf Monolog",
+    "keywords": ["logger", "log", "logging"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Drips\\Logger\\": "src"
+        },
+        "files": ["drips.php"]
+    },
+    "minimum-stability": "dev"
+}
