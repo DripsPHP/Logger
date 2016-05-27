@@ -9,5 +9,8 @@
         },
         "files": ["drips.php"]
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog": "^1.19"
+    }
 }

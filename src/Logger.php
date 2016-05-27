@@ -2,7 +2,9 @@
 
 namespace Drips\Logger;
 
-class Logger
+use Monolog\Logger as Monolog;
+use Monolog\Handler\StreamHandler;
+
+class Logger extends Monolog
 {
-    
 }
