@@ -6,7 +6,7 @@ use Drips\Logger\Handler;
 
 if (class_exists('Drips\App')) {
     App::on('create', function (App $app) {
-        $app->logger = new Logger;
+        $app->logger = new Logger('dripslogger');
         $app->logger->pushHandler(new Handler);
     });
 }

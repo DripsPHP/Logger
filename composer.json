@@ -12,5 +12,8 @@
     "minimum-stability": "dev",
     "require": {
         "monolog/monolog": "^1.19"
+    },
+    "suggest": {
+        "drips/debugbar": "Zur Darstellung der Logs in der Debugbar"
     }
 }
