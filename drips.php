@@ -8,7 +8,9 @@ use Monolog\Handler\StreamHandler;
 if (class_exists('Drips\App')) {
     App::on('create', function (App $app) {
         $app->logger = new Logger('dripslogger');
-        $app->logger->pushHandler(new StreamHandler(DRIPS_LOGS.'/drips.log'));
+        if(!DRIPS_DEBUG){
+            $app->logger->pushHandler(new StreamHandler(DRIPS_LOGS.'/drips.log'));
+        }
         $app->logger->pushHandler(new Handler);
     });
 }
