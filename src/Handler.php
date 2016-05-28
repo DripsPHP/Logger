@@ -39,8 +39,8 @@ class Handler extends AbstractHandler
                 <table>
                     <tr>
                         <td valign='top'><span class='debug-badge debug-channel'>$channel</span></td>
-                        <td valign='top'><strong class='debug-badge' style='color: $color'>$level</strong></td>
-                        <td valign='top'>$message</td>
+                        <td valign='top'><strong class='debug-badge' style='background-color: $color'>$level</strong></td>
+                        <td valign='top' style='color: $color'>$message</td>
                     </tr>
                 </table>
             </code>

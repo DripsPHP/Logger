@@ -3,13 +3,12 @@
     padding: 5px 10px;
 }
 #debugbartab-logger td {
-    color: #fff;
     font-size: 14px !important;
     line-height: 25px !important;
 }
 .debug-badge {
     border-radius: 5px;
-    color: white;
+    color: #fff;
     padding: 5px 10px;
     margin-right: 5px;
 }
