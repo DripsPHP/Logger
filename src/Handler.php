@@ -9,14 +9,14 @@ use Monolog\Logger as Monolog;
 class Handler extends AbstractHandler
 {
     public $logLevels = array(
-        Monolog::DEBUG     => '#CCD1D9',
+        Monolog::DEBUG     => '#AAAAAA',
         Monolog::INFO      => '#4FC1E9',
         Monolog::NOTICE    => '#A0D468',
         Monolog::WARNING   => '#FFC354',
         Monolog::ERROR     => '#E9573F',
         Monolog::CRITICAL  => '#FC6E51',
         Monolog::ALERT     => '#DA4453',
-        Monolog::EMERGENCY => '#F5F7FA',
+        Monolog::EMERGENCY => '#FF0000',
     );
 
    public function handle(array $record)
