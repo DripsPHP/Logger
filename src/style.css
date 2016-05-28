@@ -2,6 +2,8 @@
     background-color: #000;
     color: #fff;
     padding: 5px 10px;
+    font-size: 14px !important;
+    line-height: 25px !important;
 }
 .debug-badge {
     border-radius: 5px;
@@ -11,4 +13,5 @@
 }
 .debug-channel {
     background-color: #343434;
+    text-transform: uppercase;
 }

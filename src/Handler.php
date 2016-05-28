@@ -30,7 +30,21 @@ class Handler extends AbstractHandler
            if (!array_key_exists('logger', $debugbar->getTabs())) {
                $debugbar->registerTab('logger', 'Logs', '<style>'.file_get_contents(__DIR__.'/style.css').'</style>');
            }
-           $log_message = '<pre class="drips-logger-record" style="color: '.$this->logLevels[$record['level']].'"><span class="debug-badge debug-channel">'.strtoupper($record['channel']).'</span><strong class="debug-badge" style="background-color: '.$this->logLevels[$record['level']].'">'.$record['level_name'].'</strong> '.$record['message'].'</pre>';
+           $color = $this->logLevels[$record['level']];
+           $channel = $record['channel'];
+           $level = $record['level_name'];
+           $message=  $record['message'];
+           $log_message = "
+            <code class='drips-logger-record' style='color: $color'>
+                <table>
+                    <tr>
+                        <td><span class='debug-badge debug-channel'>$channel</span></td>
+                        <td><strong class='debug-badge'>$level</strong></td>
+                        <td>$message</td>
+                    </tr>
+                </table>
+            </code>
+           ";
            $debugbar->appendTab('logger', $log_message);
        }
 
