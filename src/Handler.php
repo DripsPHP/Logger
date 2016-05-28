@@ -8,7 +8,7 @@ use Monolog\Logger as Monolog;
 
 class Handler extends AbstractHandler
 {
-    protected $logLevels = array(
+    public $logLevels = array(
         Monolog::DEBUG     => '#CCD1D9',
         Monolog::INFO      => '#4FC1E9',
         Monolog::NOTICE    => '#A0D468',
@@ -30,7 +30,7 @@ class Handler extends AbstractHandler
            if (!array_key_exists('logger', $debugbar->getTabs())) {
                $debugbar->registerTab('logger', 'Logs', '<style>'.file_get_contents(__DIR__.'/style.css').'</style>');
            }
-           $log_message = '<pre class="drips-logger-record" style="color: '.$this->logLevels[$record['level']].'"><strong>['.$record['level_name'].']</strong>: '.$record['message'].'</pre>';
+           $log_message = '<pre class="drips-logger-record" style="color: '.$this->logLevels[$record['level']].'"><span class="debug-badge debug-channel">'.strtoupper($record['channel']).'</span><strong class="debug-badge" style="background-color: '.$this->logLevels[$record['level']].'">'.$record['level_name'].'</strong> '.$record['message'].'</pre>';
            $debugbar->appendTab('logger', $log_message);
        }
 

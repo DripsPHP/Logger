@@ -3,3 +3,12 @@
     color: #fff;
     padding: 5px 10px;
 }
+.debug-badge {
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+.debug-channel {
+    background-color: #343434;
+}
