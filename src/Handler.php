@@ -38,9 +38,9 @@ class Handler extends AbstractHandler
             <code class='drips-logger-record' style='color: $color'>
                 <table>
                     <tr>
-                        <td><span class='debug-badge debug-channel'>$channel</span></td>
-                        <td><strong class='debug-badge'>$level</strong></td>
-                        <td>$message</td>
+                        <td valign='top'><span class='debug-badge debug-channel'>$channel</span></td>
+                        <td valign='top'><strong class='debug-badge' style='color: $color'>$level</strong></td>
+                        <td valign='top'>$message</td>
                     </tr>
                 </table>
             </code>
