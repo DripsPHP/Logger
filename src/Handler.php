@@ -27,7 +27,7 @@ class Handler extends AbstractHandler
 
        if (class_exists('Drips\Debugbar\Debugbar')) {
            $debugbar = Debugbar::getInstance();
-           if (!array_key_exists('logger', $debugbar->getTabs())) {
+           if($debugbar->hasTab('logger')){
                $debugbar->registerTab('logger', 'Logs', '<style>'.file_get_contents(__DIR__.'/style.css').'</style>');
            }
            $color = $this->logLevels[$record['level']];
