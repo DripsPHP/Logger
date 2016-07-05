@@ -16,3 +16,6 @@
     background-color: #343434;
     text-transform: uppercase;
 }
+.drips-logger-record {
+    background-color:transparent !important;
+}
