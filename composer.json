@@ -1,19 +1,24 @@
 {
-    "name": "drips/logger",
-    "description": "Logger basierend auf Monolog",
-    "keywords": ["logger", "log", "logging"],
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Drips\\Logger\\": "src"
-        },
-        "files": ["drips.php"]
+  "name": "drips/logger",
+  "description": "Logger basierend auf Monolog",
+  "keywords": [
+    "logger",
+    "log",
+    "logging"
+  ],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Drips\\Logger\\": "src"
     },
-    "minimum-stability": "dev",
-    "require": {
-        "monolog/monolog": "^1.19"
-    },
-    "suggest": {
-        "drips/debugbar": "Zur Darstellung der Logs in der Debugbar"
-    }
+    "files": [
+      "drips.php"
+    ]
+  },
+  "require": {
+    "monolog/monolog": "^1.19"
+  },
+  "suggest": {
+    "drips/debugbar": "Zur Darstellung der Logs in der Debugbar"
+  }
 }

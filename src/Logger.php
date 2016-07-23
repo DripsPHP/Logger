@@ -3,8 +3,14 @@
 namespace Drips\Logger;
 
 use Monolog\Logger as Monolog;
-use Monolog\Handler\StreamHandler;
 
+/**
+ * Class Logger
+ *
+ * Logger basierend auf Monolog
+ *
+ * @package Drips\Logger
+ */
 class Logger extends Monolog
 {
 }
