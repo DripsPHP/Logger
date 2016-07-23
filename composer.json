@@ -10,10 +10,7 @@
   "autoload": {
     "psr-4": {
       "Drips\\Logger\\": "src"
-    },
-    "files": [
-      "drips.php"
-    ]
+    }
   },
   "require": {
     "monolog/monolog": "^1.19"
